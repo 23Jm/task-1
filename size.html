@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+        <div class="id-card">
+          <img src="./images/temp2.png" alt="ID Card Template" class="id-card-template">
+          <img src="./images/pp.png" alt="User Photo" id="uploadedImage">
+          <p id="student-name">
+          </p>
+          <p id="school-name">
+          </p>
+      </div>
+      <div class="controls">
+        <p>Your Image</p>
+        <div class="upload">
+        <label for="imageUpload" class="label"><i class="fa-solid fa-file-arrow-up"></i><br> Upload Image</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        </div>
+        <button id="deleteButton"><i class="fa-solid fa-trash"></i></button>
+        <button id="zoomInButton"><i class="fa fa-search-plus" aria-hidden="true"></i></i></button>
+        <button id="zoomOutButton"><i class="fa fa-search-minus" aria-hidden="true"></i></button>
+        <button id="rotateLeftButton"><i class="fa-solid fa-rotate-left"></i></button>
+        <button id="rotateRightButton"><i class="fa-solid fa-rotate-right"></i></button>
+        <button id="flipHorizontalButton"><i class="fas fa-arrows-alt-h"></i></button>
+        <button id="flipVerticalButton"><i class="fas fa-arrows-alt-v"></i></button>
+        <div class="text-inputs">
+          <textarea rows="6" placeholder="Your name" id="text-name"></textarea>
+          <textarea rows="6" placeholder="Your School" id="text-school"></textarea>
+       </div>
+      </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>

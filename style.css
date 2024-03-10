@@ -1,0 +1,102 @@
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  max-width: 540px;
+  margin: 100px auto;
+}
+.container {
+    background-color: #f1f1ee;
+    padding: 100px;
+    position: relative;
+    width: 400px;
+    border-radius: 30px;
+}
+.id-card-template {
+  width: 100%;
+  height: auto;
+}
+
+#uploadedImage {
+  position: absolute;
+  top: 128px;
+  left: 322px;
+  width: 152px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(245, 148, 36);
+}
+#imageUpload{
+    display: none;
+}
+.label{
+    padding-top: 30px;
+}
+.controls{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eceaea;
+    border: 1px dashed;
+}
+.upload{
+    margin-bottom: 20px;
+    border: 1px dashed #a19d9d;
+    box-shadow: 0 0 0 2px rgba(220, 217, 217, 0.8);
+    padding: 20px;
+    text-align: center;
+    color:#a8a4a4 ;
+}
+.upload i{
+    font-size: 40px;
+}
+button {
+  background-color: #e1dede;
+  border: none;
+  padding: 8px 10px;
+   margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #636262;
+}
+.text-inputs textarea{
+   display: block;
+   width: 98%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #ebe8e8;
+   border: 0;
+   box-shadow: 0 0 0 2px rgba(220, 217, 217, 0.8);
+   border: 1px dashed #878383;
+   padding: 10px 3px;
+}
+textarea:focus{
+    outline: none;
+}
+p{
+    color: #878383;
+    font-size: 14px;
+    width: 200px;
+}
+#student-name{
+    position: absolute;
+    top: 130px;
+    left: 135px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: rgb(56, 55, 55);
+}
+#school-name{
+     position: absolute;
+    top: 280px;
+    left: 135px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: rgb(56, 55, 55);
+}
