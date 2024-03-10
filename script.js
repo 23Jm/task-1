@@ -7,7 +7,7 @@ imageUpload.onchange=function(){
 }
 
 deleteButton.addEventListener("click", function () {
-    uploadedImage.src = "./images/prof2.jpg";
+    uploadedImage.src = "./images/pp.png";
   });
 
   const zoomInButton = document.getElementById("zoomInButton");
@@ -39,28 +39,6 @@ deleteButton.addEventListener("click", function () {
   flipVerticalButton.addEventListener("click", function () {
     uploadedImage.style.transform += "scaleY(-1)";
   });
-
-    const originalTop = uploadedImage.offsetTop;
-    const originalLeft = uploadedImage.offsetLeft;
-    const imageContainer = document.getElementById('imageContainer');
-
-
-    function moveImg(direction) {
-        switch(direction) {
-            case 'up':
-                uploadedImage.style.top = Math.max(uploadedImage.offsetTop - 10, 0) + 'px';
-                break;
-            case 'down':
-                uploadedImage.style.top = Math.min(uploadedImage.offsetTop + 10, imageContainer.clientHeight - uploadedImage.clientHeight) + 'px';
-                break;
-            case 'left':
-                uploadedImage.style.left = Math.max(uploadedImage.offsetLeft - 10, 0) + 'px';
-                break;
-            case 'right':
-                uploadedImage.style.left = Math.min(uploadedImage.offsetLeft + 10, imageContainer.clientWidth - uploadedImage.clientWidth) + 'px';
-                break;
-        }
-    }
 
 });
 
