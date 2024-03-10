@@ -7,7 +7,7 @@ imageUpload.onchange=function(){
 }
 
 deleteButton.addEventListener("click", function () {
-    uploadedImage.src = "./images/pp.png";
+    uploadedImage.src = " ";
   });
 
   const zoomInButton = document.getElementById("zoomInButton");
